@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <script src="src/hello-world.js" type="module"></script>
+    <style>
+      hello-world {
+        --color: red;
+      }
+    </style>
+    <script type="module">
+      import { CodeBubble } from "code-bubble";
+      import { setCode } from "./code-bubble-helper.js";
+      const html = String.raw;
+      const code = `
+<hello-world greeting="What's up" name="Mark">
+  <div slot="before">This line precedes the greeting.</div>
+  <div slot="after">This line follows the greeting.</div>
+</hello-world>`;
+      setCode(code);
+    </script>
+  </head>
+  <body>
+    <hello-world greeting="What's up" name="Mark">
+      <div slot="before">This line precedes the greeting.</div>
+      <div slot="after">This line follows the greeting.</div>
+    </hello-world>
+    <code-bubble></code-bubble>
+  </body>
+</html>

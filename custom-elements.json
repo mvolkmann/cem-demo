@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "hello-world.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "A simple custom element that greets the user.",
+          "name": "HelloWorld",
+          "cssProperties": [
+            {
+              "description": "the text color",
+              "name": "--color",
+              "default": "black"
+            }
+          ],
+          "slots": [
+            {
+              "description": "optional content to insert before the radio buttons",
+              "name": "before"
+            },
+            {
+              "description": "optional content to insert after the radio buttons",
+              "name": "after"
+            }
+          ],
+          "members": [
+            {
+              "kind": "field",
+              "name": "#greeting",
+              "privacy": "private",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"Hello\""
+            },
+            {
+              "kind": "field",
+              "name": "#name",
+              "privacy": "private",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"World\""
+            },
+            {
+              "kind": "method",
+              "name": "updateMessage"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "greeting",
+              "description": "the greeting to use",
+              "default": "Hello"
+            },
+            {
+              "name": "name",
+              "description": "the name to use",
+              "default": "World"
+            }
+          ],
+          "superclass": {
+            "name": "HTMLElement"
+          },
+          "tagName": "hello-world",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "hello-world",
+          "declaration": {
+            "name": "HelloWorld",
+            "module": "hello-world.js"
+          }
+        }
+      ]
+    }
+  ]
+}
