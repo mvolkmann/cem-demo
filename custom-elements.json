@@ -4,7 +4,32 @@
   "modules": [
     {
       "kind": "javascript-module",
-      "path": "hello-world.js",
+      "path": "src/code-bubble-helper.js",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "setCode",
+          "parameters": [
+            {
+              "name": "example"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "setCode",
+          "declaration": {
+            "name": "setCode",
+            "module": "src/code-bubble-helper.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/hello-world.js",
       "declarations": [
         {
           "kind": "class",
@@ -76,7 +101,90 @@
           "name": "hello-world",
           "declaration": {
             "name": "HelloWorld",
-            "module": "hello-world.js"
+            "module": "src/hello-world.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "stories/hello-world.stories.js",
+      "declarations": [
+        {
+          "kind": "function",
+          "name": "Default",
+          "parameters": [
+            {
+              "name": "args"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "WithName",
+          "parameters": [
+            {
+              "name": "args"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "WithGreetingAndName",
+          "parameters": [
+            {
+              "name": "args"
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "WithSlots",
+          "parameters": [
+            {
+              "name": "args"
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "stories/hello-world.stories.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "Default",
+          "declaration": {
+            "name": "Default",
+            "module": "stories/hello-world.stories.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "WithName",
+          "declaration": {
+            "name": "WithName",
+            "module": "stories/hello-world.stories.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "WithGreetingAndName",
+          "declaration": {
+            "name": "WithGreetingAndName",
+            "module": "stories/hello-world.stories.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "WithSlots",
+          "declaration": {
+            "name": "WithSlots",
+            "module": "stories/hello-world.stories.js"
           }
         }
       ]
