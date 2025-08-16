@@ -4,7 +4,7 @@ This project demonstrates use of the Custom Elements Manifest
 and related tools created by Burton Smith at Microsoft.
 The tools include:
 
-- custom-elements-manifest/analyzer(https://github.com/open-wc/custom-elements-manifest/tree/master/packages/analyzer)
+- custom-elements-manifest/analyzer(https://www.npmjs.com/package/@custom-elements-manifest/analyzer)
 - [Code Bubble](https://github.com/break-stuff/code-bubble)
 - [wc-dox](https://github.com/break-stuff/wc-dox/blob/main/README.md)
 - [StoryBook](https://storybook.js.org)
