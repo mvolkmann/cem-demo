@@ -10,20 +10,21 @@
     <script src="src/hello-world.js" type="module"></script>
 
     <script type="module">
-      import { CodeBubble } from "code-bubble";
-      import { setCode } from "./src/code-bubble-helper.js";
+      //import { CodeBubble } from "code-bubble";
+      //import { setCode } from "./src/code-bubble-helper.js";
       import { setWcDoxConfig } from "wc-dox/index.js";
       import manifest from "./custom-elements.json" assert { type: "json" };
       console.log("index.html : manifest =", manifest);
       setWcDoxConfig(manifest);
 
+      /*
       const html = String.raw;
-      const code = `
-<hello-world greeting="What's up" name="Mark">
-  <div slot="before">This line precedes the greeting.</div>
-  <div slot="after">This line follows the greeting.</div>
-</hello-world>`;
+      const code = html` <hello-world greeting="What's up" name="Mark">
+        <div slot="before">This line precedes the greeting.</div>
+        <div slot="after">This line follows the greeting.</div>
+      </hello-world>`;
       setCode(code);
+      */
     </script>
   </head>
   <body>
@@ -32,7 +33,7 @@
       <div slot="after">This line follows the greeting.</div>
     </hello-world>
     <wc-dox tag="hello-world"></wc-dox>
-    <wc-dox component-name="HelloWorld"></wc-dox>
-    <code-bubble></code-bubble>
+    <!-- <wc-dox component-name="HelloWorld"></wc-dox> -->
+    <!-- <code-bubble></code-bubble> -->
   </body>
 </html>
